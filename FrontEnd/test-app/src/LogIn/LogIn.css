@@ -35,10 +35,16 @@ padding: 0 20px;
    position: relative;
    margin-bottom: 10px;
 }
+
+label{
+   margin-bottom: 3px;
+}
+
 input{
    padding: 5px;
    font-size: medium;
 }
+
 .login-remember-box{
    justify-content: space-between;
    display: flex;

@@ -1,0 +1,64 @@
+.register-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0  4rem;
+    height: 100vh;
+    box-sizing: border-box
+}
+
+.register-form-box{
+    width: 65%;
+    height: 60%;
+    background-color: white;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    margin: 1rem;
+    border-radius: 12px;
+    -webkit-box-align: center;
+    column-count: 2;
+}
+
+.register-image-box, .register-form{
+    width: 50%;
+    padding: 0 20px;
+}
+
+.register-input-box{
+    border: 2px solid none;
+    width: 100%;
+    display: inline-flex;
+    flex-direction: column;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+label{
+    margin-bottom: 3px;
+}
+
+input{
+    padding: 5px;
+    font-size: medium;
+}
+
+.register-remember-box{
+    justify-content: space-between;
+    display: flex;
+    font-size: medium;
+    margin-bottom: 15px;
+    margin-top: 5px;
+}
+
+button{
+    font-size: medium;
+    padding: 7px 9px;
+    background-color: rgb(25, 118, 210);
+    color: white;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+}
