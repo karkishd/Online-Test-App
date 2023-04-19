@@ -1,4 +1,5 @@
-import "./ForgotPassword.css"
+import "./ForgotPassword.css";
+import { Link } from "react-router-dom";
 
 function ForgotPassword() {
   return (
@@ -15,8 +16,14 @@ function ForgotPassword() {
             <label>Email</label>
             <input type="email" />
           </div>
-          <button className="forgot-reset-button button" type="submit">Reset Password</button>
-          <button className="forgot-goback-button button" type="submit">Go Back</button>
+          <button className="forgot-reset-button button" type="submit">
+            Reset Password
+          </button>
+          <Link to="/">
+            <button className="forgot-goback-button button" type="submit">
+              Go Back
+            </button>
+          </Link>
         </div>
       </div>
     </div>

@@ -1,4 +1,5 @@
 import "./LogIn.css";
+import { Link } from "react-router-dom";
 
 function LogIn() {
   return (
@@ -25,13 +26,18 @@ function LogIn() {
                 <input type="checkbox" />
                 <span>Remember Me</span>
               </div>
+              <Link to="/forgot">
               <a href=" ">Forgot Password?</a>
+              </Link>
             </div>
             <div>
               <button type="submit">Login</button>
             </div>
             <p>
-              Don't have an account? <a href=" ">Register Here</a>
+              Don't have an account?
+              <Link to="/new">
+                <a href=" ">Register Here</a>
+              </Link>
             </p>
           </form>
         </div>
