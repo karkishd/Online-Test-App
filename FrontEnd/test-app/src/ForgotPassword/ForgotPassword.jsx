@@ -1,7 +1,14 @@
 import "./ForgotPassword.css";
 import { Link } from "react-router-dom";
+import { useState } from "react";
 
 function ForgotPassword() {
+  const [email, setEmail] = useState();
+
+  const onChangeEmail = (e)=>{
+    setEmail(e.target.value)
+  }
+  
   return (
     <div className="forgot-box">
       <div className="forgot-form-box">
@@ -14,7 +21,7 @@ function ForgotPassword() {
         <div className="forgot-form">
           <div className="forgot-input-box single-box">
             <label>Email</label>
-            <input type="email" />
+            <input type="email" onChange={onChangeEmail}/>
           </div>
           <button className="forgot-reset-button button" type="submit">
             Reset Password

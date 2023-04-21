@@ -1,7 +1,32 @@
 import "./LogIn.css";
 import { Link } from "react-router-dom";
+import { useState } from "react";
 
 function LogIn() {
+  const [email, setEmail] = useState();
+  const [password, setPassword] = useState();
+  const [login, setLogin] = useState(false);
+  const [token, setToken] = useState();
+
+  const onChangeEmail = (e) => {
+    setEmail(e.target.value);
+  };
+  const onChangePassword = (e) => {
+    setPassword(e.target.value);
+  };
+
+  const submitForm = () => {
+    console.log({ email, password, login, token });
+    if (typeof email === "undefined") {
+      console.log("Enter your Email");
+    } else if (typeof password === "undefined") {
+      console.log("Enter your Password");
+    } else {
+      console.log("fun");
+    }
+  };
+
+
   return (
     <div className="login-box">
       <div className="login-form-box">
@@ -15,11 +40,11 @@ function LogIn() {
           <form>
             <div className="login-input-box">
               <label>Email</label>
-              <input type="email" />
+              <input type="email" onChange={onChangeEmail} />
             </div>
             <div className="login-input-box">
               <label>Password</label>
-              <input type="password" />
+              <input type="password" onChange={onChangePassword} />
             </div>
             <div className="login-remember-box">
               <div>
@@ -27,11 +52,13 @@ function LogIn() {
                 <span>Remember Me</span>
               </div>
               <Link to="/forgot">
-              <a href=" ">Forgot Password?</a>
+                <a href=" ">Forgot Password?</a>
               </Link>
             </div>
             <div>
-              <button type="submit">Login</button>
+              <button type="submit" onClick={submitForm}>
+                Login
+              </button>
             </div>
             <p>
               Don't have an account?

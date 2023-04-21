@@ -13,17 +13,35 @@ function Registration() {
         </div>
         <div className="register-form">
           <form>
-            <div className="register-input-box">
-              <label>Username</label>
-              <input type="text" />
-            </div>
-            <div className="register-input-box">
-              <label>Email</label>
-              <input type="email" />
-            </div>
-            <div className="register-input-box">
-              <label>Password</label>
-              <input type="password" />
+            <div className="register-form-container">
+              <div className="register-form-box1">
+                <div className="register-input-box">
+                  <label>First Name</label>
+                  <input type="text" />
+                </div>
+                <div className="register-input-box">
+                  <label>Mobile</label>
+                  <input type="text" />
+                </div>
+                <div className="register-input-box">
+                  <label>Password</label>
+                  <input type="password" />
+                </div>
+              </div>
+              <div className="register-form-box2">
+                <div className="register-input-box">
+                  <label>Last Name</label>
+                  <input type="text" />
+                </div>
+                <div className="register-input-box">
+                  <label>Email</label>
+                  <input type="email" />
+                </div>
+                <div className="register-input-box">
+                  <label>Re-Password</label>
+                  <input type="password" />
+                </div>
+              </div>
             </div>
             <div className="register-remember-box">
               <div>
