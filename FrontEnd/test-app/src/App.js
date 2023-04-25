@@ -1,8 +1,8 @@
 import "./App.css";
-import ForgotPassword from "./ForgotPassword/ForgotPassword";
-import LogIn from "./LogIn/LogIn";
-import Registration from "./Registration/Registration";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Login from "./component/pages/login/Login";
+import Registration from "./component/pages/registration/Registration";
+import ForgotPassword from "./component/pages/forgotPassword/ForgotPassword";
 
 function App() {
   return (
@@ -10,7 +10,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/">
-            <Route index element={<LogIn />} />
+            <Route index element={<Login />} />
             <Route path="forgot" element={<ForgotPassword />} />
             <Route path="new" element={<Registration />} />
           </Route>

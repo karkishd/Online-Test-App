@@ -1,0 +1,25 @@
+.form-input-box{
+    margin: 14px 0;
+}
+
+.form-input{
+    width: 85%;
+    padding: 5px;
+    font-size: medium;
+}
+
+.form-error{
+    margin: 0;
+    color: red;
+    font-size: small;
+}
+
+/* Hide the default number input arrows */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number] {
+  -moz-appearance: textfield;
+}

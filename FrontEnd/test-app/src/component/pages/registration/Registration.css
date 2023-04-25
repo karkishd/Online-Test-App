@@ -1,0 +1,66 @@
+.register-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.register-form-box{
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 12px;
+    width: 60%;
+}
+
+.register-image-box{
+    width: 30%;
+}
+
+.register-form{
+    width: 70%;
+}
+
+.register-header-box{
+    display: flex;
+    justify-content: center;
+}
+
+.register-form-block-container{
+    display: flex;
+}
+
+.register-form-block-box{
+    width: 50%;
+}
+
+.register-remember-container{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.register-all-condition-checkbox{
+    transform: scale(1.2);
+    margin-right: 10px;
+}
+.register-button{
+    font-size: medium;
+    padding: 7px 19px;
+    background-color: rgb(25, 118, 210);
+    color: white;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+}
+
+.register-login{
+    margin: 0;
+}
+
+
+.register-login a{
+    padding-left: 5px;
+}
